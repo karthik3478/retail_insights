@@ -5,6 +5,17 @@ from llm_handler import LLMHandler
 def main():
     st.title("Retail Insight Generator")
     
+    # Add custom CSS for better message formatting
+    st.markdown("""
+        <style>
+        .stChatMessage {
+            padding: 1rem;
+            line-height: 1.5;
+            white-space: pre-wrap;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+    
     # Initialize chat history
     if "messages" not in st.session_state:
         st.session_state.messages = []
