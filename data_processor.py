@@ -1,10 +1,15 @@
 import pandas as pd
-from sqlalchemy import create_engine, text
+from sqlalchemy import create_engine, text, inspect
 import clevercsv
+import psycopg2
+from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
 class DataProcessor:
     def __init__(self, file):
         try:
+            # First ensure database exists
+            self.create_database_if_not_exists()
+            
             # Read file content
             content = file.read().decode('utf-8')
             file.seek(0)  # Reset file pointer
@@ -38,8 +43,63 @@ class DataProcessor:
         except Exception as e:
             raise ValueError(f"Error reading CSV file: {str(e)}")
 
+    def create_database_if_not_exists(self):
+        try:
+            # Connect to default PostgreSQL database
+            conn = psycopg2.connect(
+                dbname="postgres",
+                user="postgres",
+                password="samplepass",
+                host="localhost",
+                port="5432"
+            )
+            conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
+            cursor = conn.cursor()
+            
+            # Check if database exists
+            cursor.execute("SELECT 1 FROM pg_catalog.pg_database WHERE datname = 'retail_data'")
+            exists = cursor.fetchone()
+            
+            if not exists:
+                cursor.execute('CREATE DATABASE retail_data')
+            
+            cursor.close()
+            conn.close()
+            
+        except Exception as e:
+            raise ValueError(f"Error creating database: {str(e)}")
+
+    def create_table_if_not_exists(self):
+        try:
+            inspector = inspect(self.engine)
+            if not inspector.has_table('retail_ingest_data'):
+                # Create table with appropriate columns based on DataFrame
+                create_table_query = """
+                CREATE TABLE retail_ingest_data (
+                    id SERIAL PRIMARY KEY
+                """
+                
+                for column in self.df.columns:
+                    if column.lower() in ['quantity', 'price', 'unit_price', 'total_amount', 'totalamount']:
+                        create_table_query += f",\n    {column} NUMERIC"
+                    else:
+                        create_table_query += f",\n    {column} TEXT"
+                
+                create_table_query += "\n);"
+                
+                with self.engine.connect() as connection:
+                    connection.execute(text(create_table_query))
+                    connection.commit()
+                
+        except Exception as e:
+            raise ValueError(f"Error creating table: {str(e)}")
+
     def process_data(self):
         try:
+            # Ensure table exists
+            self.create_table_if_not_exists()
+            
+            # Insert or replace data
             self.df.to_sql('retail_ingest_data', self.engine, if_exists='replace', index=False)
             self.column_types = {col: str(dtype) for col, dtype in self.df.dtypes.items()}
         except Exception as e:
