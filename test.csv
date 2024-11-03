@@ -1,0 +1,51 @@
+Order_ID,Date,Product_Name,Category,Size,Color,Quantity,Unit_Price,Total_Amount,Payment_Method,Customer_ID,Store_Location
+B7392,2024-01-15,Classic Cotton T-Shirt,Tops,M,White,2,19.99,39.98,Credit Card,C4521,New York
+B7393,2024-01-15,Slim Fit Jeans,Bottoms,32,Blue,1,59.99,59.99,PayPal,C4522,Los Angeles
+B7394,2024-01-15,Wool Blend Sweater,Outerwear,L,Gray,1,89.99,89.99,Debit Card,C4523,Chicago
+B7395,2024-01-16,Summer Dress,Dresses,S,Floral,1,45.99,45.99,Credit Card,C4524,Miami
+B7396,2024-01-16,Athletic Shorts,Activewear,M,Black,3,24.99,74.97,Cash,C4525,Boston
+B7397,2024-01-16,Denim Jacket,Outerwear,XL,Blue,1,79.99,79.99,Credit Card,C4526,Seattle
+B7398,2024-01-17,Yoga Pants,Activewear,S,Black,2,34.99,69.98,PayPal,C4527,San Francisco
+B7399,2024-01-17,Button-Up Shirt,Tops,L,Blue Stripe,1,49.99,49.99,Credit Card,C4528,Dallas
+B7400,2024-01-17,Maxi Skirt,Bottoms,M,Navy,1,39.99,39.99,Debit Card,C4529,Houston
+B7401,2024-01-17,Hooded Sweatshirt,Outerwear,M,Gray,2,44.99,89.98,Cash,C4530,Philadelphia
+B7402,2024-01-18,Cargo Pants,Bottoms,34,Khaki,1,54.99,54.99,Credit Card,C4531,Phoenix
+B7403,2024-01-18,V-Neck Sweater,Tops,S,Burgundy,1,39.99,39.99,PayPal,C4532,San Diego
+B7404,2024-01-18,Running Leggings,Activewear,XS,Purple,2,29.99,59.98,Credit Card,C4533,Denver
+B7405,2024-01-19,Blazer,Outerwear,M,Black,1,99.99,99.99,Debit Card,C4534,Atlanta
+B7406,2024-01-19,Printed Sundress,Dresses,L,Yellow,1,49.99,49.99,Cash,C4535,Miami
+B7407,2024-01-19,Tank Top,Tops,S,Pink,3,14.99,44.97,Credit Card,C4536,Los Angeles
+B7408,2024-01-20,Skinny Jeans,Bottoms,28,Dark Blue,1,64.99,64.99,PayPal,C4537,Chicago
+B7409,2024-01-20,Windbreaker,Outerwear,L,Red,1,69.99,69.99,Credit Card,C4538,Seattle
+B7410,2024-01-20,Sports Bra,Activewear,M,White,2,29.99,59.98,Debit Card,C4539,Boston
+B7411,2024-01-21,Polo Shirt,Tops,XL,Navy,1,34.99,34.99,Cash,C4540,Houston
+B7412,2024-01-21,Pleated Skirt,Bottoms,S,Black,1,44.99,44.99,Credit Card,C4541,New York
+B7413,2024-01-21,Winter Coat,Outerwear,M,Brown,1,129.99,129.99,PayPal,C4542,Chicago
+B7414,2024-01-22,Crop Top,Tops,XS,White,2,19.99,39.98,Credit Card,C4543,Miami
+B7415,2024-01-22,Wide Leg Pants,Bottoms,M,Beige,1,59.99,59.99,Debit Card,C4544,Los Angeles
+B7416,2024-01-22,Rain Jacket,Outerwear,L,Yellow,1,74.99,74.99,Cash,C4545,Seattle
+B7417,2024-01-23,Workout Tank,Activewear,S,Blue,2,24.99,49.98,Credit Card,C4546,Denver
+B7418,2024-01-23,Midi Dress,Dresses,M,Green,1,69.99,69.99,PayPal,C4547,Phoenix
+B7419,2024-01-23,Cardigan,Tops,L,Cream,1,49.99,49.99,Credit Card,C4548,Dallas
+B7420,2024-01-24,Boyfriend Jeans,Bottoms,30,Light Blue,1,69.99,69.99,Debit Card,C4549,Atlanta
+B7421,2024-01-24,Puffer Jacket,Outerwear,XL,Black,1,89.99,89.99,Cash,C4550,Boston
+B7422,2024-01-24,Graphic Tee,Tops,M,Gray,3,17.99,53.97,Credit Card,C4551,San Francisco
+B7423,2024-01-25,Bike Shorts,Activewear,S,Black,2,19.99,39.98,PayPal,C4552,Houston
+B7424,2024-01-25,Wrap Dress,Dresses,M,Red,1,59.99,59.99,Credit Card,C4553,Chicago
+B7425,2024-01-25,Denim Shorts,Bottoms,L,Blue,1,39.99,39.99,Debit Card,C4554,Miami
+B7426,2024-01-26,Fleece Pullover,Outerwear,S,Purple,1,54.99,54.99,Cash,C4555,Seattle
+B7427,2024-01-26,Long Sleeve Tee,Tops,XL,Black,2,24.99,49.98,Credit Card,C4556,New York
+B7428,2024-01-26,Yoga Top,Activewear,M,Pink,1,29.99,29.99,PayPal,C4557,Los Angeles
+B7429,2024-01-27,Maxi Dress,Dresses,L,Blue Floral,1,79.99,79.99,Credit Card,C4558,Phoenix
+B7430,2024-01-27,Chino Pants,Bottoms,32,Navy,1,49.99,49.99,Debit Card,C4559,Dallas
+B7431,2024-01-27,Leather Jacket,Outerwear,M,Black,1,149.99,149.99,Cash,C4560,Chicago
+B7432,2024-01-28,Muscle Tank,Tops,L,Gray,2,22.99,45.98,Credit Card,C4561,San Diego
+B7433,2024-01-28,Running Shorts,Activewear,S,Blue,2,27.99,55.98,PayPal,C4562,Denver
+B7434,2024-01-28,Pencil Skirt,Bottoms,M,Black,1,44.99,44.99,Credit Card,C4563,Atlanta
+B7435,2024-01-29,Hoodie,Outerwear,XL,Navy,1,59.99,59.99,Debit Card,C4564,Boston
+B7436,2024-01-29,Sleeveless Blouse,Tops,S,White,2,34.99,69.98,Cash,C4565,Miami
+B7437,2024-01-29,Tennis Skirt,Activewear,XS,White,1,39.99,39.99,Credit Card,C4566,Houston
+B7438,2024-01-30,Shirt Dress,Dresses,M,Stripe,1,64.99,64.99,PayPal,C4567,Seattle
+B7439,2024-01-30,Linen Pants,Bottoms,L,Beige,1,69.99,69.99,Credit Card,C4568,New York
+B7440,2024-01-30,Jean Jacket,Outerwear,S,Light Blue,1,84.99,84.99,Debit Card,C4569,Los Angeles
+B7441,2024-01-31,Crop Hoodie,Tops,M,Pink,2,39.99,79.98,Cash,C4570,Chicago
